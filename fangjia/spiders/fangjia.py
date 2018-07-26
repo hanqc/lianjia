@@ -8,7 +8,7 @@ class fangjiaSpider(scrapy.Spider):
     start_urls = []
     def start_requests(self):
         urlhead = 'https://xa.fang.lianjia.com/loupan/'
-        for i in range(10):
+        for i in range(50):
             url = urlhead+'pg%snht1' % i
             self.start_urls.append(url)
         for url in self.start_urls:
