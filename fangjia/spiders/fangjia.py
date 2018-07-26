@@ -25,6 +25,6 @@ class fangjiaSpider(scrapy.Spider):
             item['FANGJIA_NAME'] = name
             item['FANGJIA_ADDRESS'] = address
             item['FANGJIA_PRICE'] = price
-            item['FANGJIA_URL'] = 'http://cd.fang.lianjia.com'+url
+            item['FANGJIA_URL'] = 'http://xa.fang.lianjia.com'+url
             yield item
         pass
